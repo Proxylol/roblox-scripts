@@ -1,4 +1,4 @@
--- Not obfuscating this because it's a waste + u can't get nothing out of this :skull:
+-- not obfuscating ts
 
 
 
