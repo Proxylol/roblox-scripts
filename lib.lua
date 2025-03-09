@@ -7313,7 +7313,7 @@ function library:CreateWindow(options, ...)
 			Side = "right"
 		})
 		local detailssection = designer:CreateSection({
-			Name = "More Info"
+			Name = "Info"
 		})
 		local filessection = designer:CreateSection({
 			Name = "Profiles",
