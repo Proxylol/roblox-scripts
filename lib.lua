@@ -7351,15 +7351,15 @@ function library:CreateWindow(options, ...)
 			Desginer = true
 		}
 		local daaata = {
-            {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
-                Name = "Image Color",
-                Flag = "__Designer.Background.ImageColor",
-                Value = Color3.new(1, 1, 1),
-                Callback = updatecolorsnotween,
-                __designer = 1
-            }},
-        }
-        {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
+    {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
+        Name = "Image Color",
+        Flag = "__Designer.Background.ImageColor",
+        Value = Color3.new(1, 1, 1),
+        Callback = updatecolorsnotween,
+        __designer = 1
+    }},
+}
+{"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
 			Name = "Image Transparency",
 			Flag = "__Designer.Background.ImageTransparency",
 			Value = 95,
@@ -7417,7 +7417,7 @@ function library:CreateWindow(options, ...)
 			end
 		}}, {"AddLabel", "__Designer.Label.Version", settingssection, {
 			Name = "Library Version: " .. tostring(library.Version or "?")
-		}}}
+		}}
 		if setclipboard and daaata[8] then
 			local common_table = daaata[8][4]
 			if common_table then
