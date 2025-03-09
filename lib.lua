@@ -7350,19 +7350,16 @@ function library:CreateWindow(options, ...)
 			Workspace = library.WorkspaceName or "Unnamed Workspace",
 			Desginer = true
 		}
-		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
-			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://4427304036",
-			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://4427304036",
-			Callback = updatecolorsnotween
-		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
-			Name = "Image Color",
-			Flag = "__Designer.Background.ImageColor",
-			Value = Color3.new(1, 1, 1),
-			Callback = updatecolorsnotween,
-			__designer = 1
-		}}, {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
+		local daaata = {
+            {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
+                Name = "Image Color",
+                Flag = "__Designer.Background.ImageColor",
+                Value = Color3.new(1, 1, 1),
+                Callback = updatecolorsnotween,
+                __designer = 1
+            }},
+        }
+        {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
 			Name = "Image Transparency",
 			Flag = "__Designer.Background.ImageTransparency",
 			Value = 95,
